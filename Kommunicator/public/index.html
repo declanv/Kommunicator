@@ -15,6 +15,20 @@
 
     <!-- Templates -->
 
+      <script type="text/template" id="message_template">
+      <div class="message_container">
+        <div class="post_title">
+          <h2 class="message_title"><%=title %> </h2><button class="delete_message" data-action="destroy" name="delete_post">X</button>
+        </div>
+          <div class="message_comment">
+            <form>
+              <p><input type="text" placeholder="COMMENT, COMRADE" name="comment">
+              </p>
+            </form>
+          </div>
+      </div>
+      </script>
+
     <!-- Backbone -->
 
     <!-- app -->
