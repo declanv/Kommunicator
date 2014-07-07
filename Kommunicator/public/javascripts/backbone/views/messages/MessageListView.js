@@ -8,8 +8,8 @@ Kommunicatorapp.Views.MessageListView = Backbone.View.extend({
     var self = this;
     self.$el.empty();
     _.each(this.collection.models, function(message){
-      var messageView = new Kommunicatorapp.Views.MessageView({ model.self.$el.append( messageView.render().el );
+      var messageView = new Kommunicatorapp.Views.MessageView({ model: message })
+        self.$el.append( messageView.render().el );
         })
-      }
   }
 })

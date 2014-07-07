@@ -7,7 +7,7 @@ Kommunicatorapp.Views.Message = Backbone.Model.extend({
     this.listenTo( this.model, "change", this.render);
     },
     tagName: 'li',
-    template: _.template( $("#message_template").html() )
+    template: _.template( $("#message_template").html() ),
     render: function(){
       this.$el.empty();
       this.$el.html( (this.template.model.attributes ) );
